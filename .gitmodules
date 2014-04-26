@@ -1,0 +1,3 @@
+[submodule "vendor/phantomjs-nodify"]
+	path = vendor/phantomjs-nodify
+	url = git@github.com:jgonera/phantomjs-nodify.git
