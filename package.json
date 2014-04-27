@@ -1,11 +1,11 @@
 {
   "name": "gherkin-mocha",
   "version": "0.0.1",
-  "description": "",
-  "main": "lib/parser.js",
+  "description": "Basic cucumber impl. based on Mocha, Phantom and Webdriver",
+  "main": "index.js",
   "scripts": {
     "test": "node bin/gherkin-mocha --stepdir test/node-steps test/features/browse.feature",
-    "test-phantom": "phantomjs bin/gherkin-mocha-phantom --stepdir test/phantom-steps test/features/browse.feature"
+    "posttest": "phantomjs bin/gherkin-mocha-phantom --stepdir test/phantom-steps test/features/browse.feature"
   },
   "license": "ISC",
   "devDependencies": {

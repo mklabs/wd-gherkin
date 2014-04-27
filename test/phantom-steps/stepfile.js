@@ -25,7 +25,6 @@ Then(/I submit the form "([^"]+)"/, function(selector, done) {
   var self = this;
   this.page.onUrlChanged = function(url) {
     self.page.onUrlChanged = null;
-    console.log('url changed', url);
     setTimeout(done, 1000);
   };
 
