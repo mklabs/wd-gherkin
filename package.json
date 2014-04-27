@@ -9,12 +9,12 @@
   },
   "license": "ISC",
   "devDependencies": {
-    "phantomjs": "^1.9.7-4",
-    "wd": "^0.2.19"
+    "phantomjs": "^1.9.7-4"
   },
   "dependencies": {
     "gherkin": "^2.12.2",
     "nopt": "^2.2.0",
-    "mocha": "^1.18.2"
+    "mocha": "^1.18.2",
+    "wd": "^0.2.19"
   }
 }
