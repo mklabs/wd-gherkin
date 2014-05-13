@@ -2,6 +2,6 @@
 
 // Node runner
 
-require('../').cli.run(function(code) {
+require('..').cli.run(function(code) {
   process.exit(code);
 });
