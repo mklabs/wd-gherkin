@@ -2,6 +2,8 @@
 
 // Node runner
 
+// process.env.DEBUG = process.env.DEBUG || 'w*';
+
 require('..').cli.run(function(code) {
   process.exit(code);
 });
