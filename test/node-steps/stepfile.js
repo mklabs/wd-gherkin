@@ -21,12 +21,14 @@ Then(/I want to render the page at "([^"]+)"/, function(filename, done) {
 });
 
 Then(/I click on "([^"]+)"/, function(selector, done) {
-  done();
+  this.driver.elementByCssSelector(selector, function(err, element) {
+    if (err) return done(err);
+    element.click(done);
+  });
 });
 
 Then(/I submit the form "([^"]+)"/, function(selector, done) {
-  var driver = this.driver;
-  driver.elementByCssSelector(selector, function(err, element) {
+  this.driver.elementByCssSelector(selector, function(err, element) {
     if (err) return done(err);
     element.submit(done);
   });
@@ -34,7 +36,7 @@ Then(/I submit the form "([^"]+)"/, function(selector, done) {
 
 Then(/I fill "([^"]+)" in "([^"]+)"/, function(value, name, done) {
   var driver = this.driver;
-  driver.elementByCssSelector('[name=' + name + ']', function(err, element) {
+  this.driver.elementByCssSelector('[name=' + name + ']', function(err, element) {
     if (err) return done(err);
     driver.type(element, value, done);
   });

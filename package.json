@@ -8,8 +8,7 @@
     "gherkin-mocha-phantom": "bin/gherkin-mocha-phantom"
   },
   "scripts": {
-    "test": "node bin/gherkin-mocha --stepdir test/node-steps test/features/browse.feature",
-    "posttest": "phantomjs bin/gherkin-mocha-phantom --stepdir test/phantom-steps test/features/browse.feature"
+    "test": "node bin/gherkin-mocha --stepdir test/node-steps test/features/browse.feature"
   },
   "license": "ISC",
   "devDependencies": {
