@@ -2,7 +2,7 @@
 # Gherkin Mocha
 
 Combining both [Gherkin](https://github.com/cucumber/cucumber/wiki/Gherkin)
-and [Mocha](http://visionmedia.github.io/mocha/), as a phantomjs or node runner.
+and [Mocha](http://mochajs.org/), as a phantomjs or node runner.
 
 ## Description
 
